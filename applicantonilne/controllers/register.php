@@ -101,9 +101,9 @@
 						';
 
 						// Create the Transport
-						$transport = (new Swift_SmtpTransport('smtp.provo.edu', 25, 'ssl'))
-						//->setUsername('donotreply@provo.edu')
-						//->setPassword('your_email_password')
+						$transport = (new Swift_SmtpTransport('smtp.provo.edu', 25))
+						->setUsername('donotreply@provo.edu')
+						->setPassword('your_email_password')
 						;
 
 						// Create the Mailer using your created Transport
