@@ -21,7 +21,7 @@
 		$password      = $_POST["password"];
 
 		// check if email already exist
-		$email_check_query = mysqli_query($connection, "SELECT * FROM users WHERE email = '{$email}' ");
+		$email_check_query = mysqli_query($link, "SELECT * FROM users WHERE email = '{$email}' ");
 		$rowCount = mysqli_num_rows($email_check_query);
 
 
@@ -38,11 +38,11 @@
 				';
 			} else {
 				// clean the form data before sending to database
-				$_first_name = mysqli_real_escape_string($connection, $firstname);
-				$_last_name = mysqli_real_escape_string($connection, $lastname);
-				$_email = mysqli_real_escape_string($connection, $email);
-				$_mobile_number = mysqli_real_escape_string($connection, $mobilenumber);
-				$_password = mysqli_real_escape_string($connection, $password);
+				$_first_name = mysqli_real_escape_string($link, $firstname);
+				$_last_name = mysqli_real_escape_string($link, $lastname);
+				$_email = mysqli_real_escape_string($link, $email);
+				$_mobile_number = mysqli_real_escape_string($link, $mobilenumber);
+				$_password = mysqli_real_escape_string($link, $password);
 
 				// perform validation
 				if(!preg_match("/^[a-zA-Z ]*$/", $_first_name)) {
@@ -88,10 +88,10 @@
 					'{$token}', '0', now())";
 
 					// Create mysql query
-					$sqlQuery = mysqli_query($connection, $sql);
+					$sqlQuery = mysqli_query($link, $sql);
 
 					if(!$sqlQuery){
-						die("MySQL query failed!" . mysqli_error($connection));
+						die("MySQL query failed!" . mysqli_error($link));
 					}
 
 					// Send verification email

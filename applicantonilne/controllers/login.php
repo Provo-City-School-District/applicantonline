@@ -11,16 +11,16 @@
 
 		// clean data
 		$user_email = filter_var($email_signin, FILTER_SANITIZE_EMAIL);
-		$pswd = mysqli_real_escape_string($connection, $password_signin);
+		$pswd = mysqli_real_escape_string($link, $password_signin);
 
 		// Query if email exists in db
 		$sql = "SELECT * From users WHERE email = '{$email_signin}' ";
-		$query = mysqli_query($connection, $sql);
+		$query = mysqli_query($link, $sql);
 		$rowCount = mysqli_num_rows($query);
 
 		// If query fails, show the reason
 		if(!$query){
-		   die("SQL query failed: " . mysqli_error($connection));
+		   die("SQL query failed: " . mysqli_error($link));
 		}
 
 		if(!empty($email_signin) && !empty($password_signin)){
