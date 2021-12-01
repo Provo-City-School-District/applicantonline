@@ -15,6 +15,7 @@
           }
         if (!empty($_SESSION['email'])) {
               ?>
+              <a href="dashboard.php">Dashboard</a>
               <a href="logout.php">Sign Out</a>
               <?php
 
