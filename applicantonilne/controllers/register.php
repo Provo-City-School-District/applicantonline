@@ -97,7 +97,7 @@
 					// Send verification email
 					if($sqlQuery) {
 						$msg = 'Click on the activation link to verify your email. <br><br>
-						  <a href="https://sandbox.provo.edu/applicantOnline/user_verification.php?token='.$token.'"> Click here to verify email</a>
+						  <a href="https://sandbox.provo.edu/applicantonline/user_verification.php?token='.$token.'"> Click here to verify email</a>
 						';
 
 						// Create the Transport

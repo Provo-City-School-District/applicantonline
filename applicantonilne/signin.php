@@ -30,8 +30,7 @@
 						</div>
 
 						<button type="submit" name="login" id="sign_in"
-							class="btn btn-outline-primary btn-lg btn-block">Sign
-							in</button>
+							class="btn btn-outline-primary btn-lg btn-block">Sign in</button>
 					</form>
 				</div>
 			</div>
