@@ -1,4 +1,5 @@
 <?php
+	//checks for a current session. if no session, start a session
 	if(!isset($_SESSION)){session_start();}
 ?>
 	  <meta charset="utf-8">
