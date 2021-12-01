@@ -33,6 +33,7 @@ Main Structure Elements
 	background-color: #fff;
 	margin: 1% 2% 0 2%;
 	padding: 1% 1% 1% 1%;
+	border-radius: 3px;
 }
 #mainHeader {
 	background:#dce3e8;
