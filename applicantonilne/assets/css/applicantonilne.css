@@ -1,0 +1,61 @@
+/*=====================================================================================================
+CSS Reset
+=======================================================================================================*/
+* {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+/*=====================================================================================================
+General Element Styling
+=======================================================================================================*/
+body { line-height: 1; background-color: #eee;}
+blockquote, q {	quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: '';content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+a {
+
+}
+a:hover {
+
+}
+/*==============================================
+Headings
+================================================*/
+h1,h2,h3,h4 {}
+h1 {font-size:2em;}
+h2 {font-size: 1.75em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.25em;}
+/*=====================================================================================================
+Main Structure Elements
+=======================================================================================================*/
+#applicantWrapper {
+	background-color: #fff;
+	margin: 1% 2% 0 2%;
+	padding: 1% 1% 1% 1%;
+}
+#mainHeader {
+	background:#dce3e8;
+	background:linear-gradient(to bottom,#dce3e8,#f6f9fb 50%,#f6f9fb 55%,#dbe2e8);
+	display: flex;
+	flex-wrap: wrap;
+}
+#mainFooter {
+	text-align: center;
+}
+/*=====================================================================================================
+#mainHeader
+=======================================================================================================*/
+#mainHeader img {
+	flex-basis: 20%;
+}
+#mainHeader h1 {
+	flex-basis: 80%;
+}
+/*==============================================
+#topNav
+================================================*/
+.topNav {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
