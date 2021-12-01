@@ -15,9 +15,9 @@
 	<?php include('templateAreas/head.php') ?>
   </head>
 <?php include('templateAreas/header.php') ?>
-	<section class="loggedInUser">
+	<aside class="loggedInUser">
 		<h2 class="hidden">user profile information</h2>
 		<p>Welcome Back <?php echo $_SESSION['firstname']. ' ' . $_SESSION['lastname']; ?></p>
-	</section>
+	</aside>
 
 <?php include('templateAreas/footer.php') ?>
